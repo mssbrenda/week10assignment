@@ -1,0 +1,69 @@
+<!--
+Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+A Bootstrap styled table representing your choice of data.
+A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASSIGNMENT</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+
+    <!--Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+A Bootstrap styled table representing your choice of data.
+A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.-->
+  </head>
+  <body class="container">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label form="movie-input">Movie</label>
+              <input type="text" class="form-control" id="new-movie" />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label form="release-year">Release Date</label>
+              <input type="year" class="form-control" id="release-date" />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label form="producer">Producer</label>
+              <input type="text" class="form-control" id="producer" />
+            </div>
+          </div>
+          <button id="submit" class="btn btn-primary form-control">
+            SUBMIT
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--THIS IS WHERE OUR TABLE STARTS-->
+
+    <table id="movielist" class="table table-dark table-striped">
+      <tbody>
+        <tr>
+          <th>Movie</th>
+          <th>Release Date</th>
+          <th>Producer</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script scr="index.js"></script>
+  </body>
+</html>
